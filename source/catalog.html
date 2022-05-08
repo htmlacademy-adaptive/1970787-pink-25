@@ -105,6 +105,24 @@
       накопилось в телефоне!</p>
   </section>
 
+  <section class="photo-posting">
+    <form class="photo-posting__form" action="https://echo.htmlacademy.ru" method="post">
+      <img class="photo-posting__image" src="#" alt="#">
+      <button class="photo-posting__change-button photo-posting__change-button--cut" type="button"></button>
+      <button class="photo-posting__change-button photo-posting__change-button--fill" type="button"></button>
+      <button class="photo-posting__change-button photo-posting__change-button--brightness" type="button"></button>
+      <label class="visually-hidden" for="cut">Обрезка</label>
+      <label class="visually-hidden" for="fill">Заливка</label>
+      <label class="visually-hidden" for="brightness">Яркость</label>
+      <input class="photo-posting__input" type="range" name="cut" id="cut">
+      <input class="photo-posting__input" type="range" name="fill" id="fill">
+      <input class="photo-posting__input" type="range" name="brightness" id="brightness">
+      <button class="photo-posting__button" type="submit">Запостить</button>
+      <button class="photo-posting__button" type="reset">Отмена</button>
+    </form>
+
+  </section>
+
 </main>
 
 <footer class="main-footer">
