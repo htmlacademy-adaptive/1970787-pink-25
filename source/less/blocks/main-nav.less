@@ -1,5 +1,6 @@
 .main-nav {
   position: relative;
+  z-index: 1;
 
   @media (min-width: @desktop-width) {
     display: flex;
@@ -158,10 +159,12 @@
 }
 
 .main-nav__menu {
+  background-color: @darkblue;
+
   @media (min-width: @desktop-width) {
     display: flex;
+    justify-content: flex-end;
     flex-wrap: wrap;
-    justify-content: space-between;
     width: 100%;
     padding: 0 120px 0 173px;
     background-color: fade(@black, 30%);
@@ -185,8 +188,9 @@
   box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
 
   @media (min-width: @desktop-width) {
+    flex-grow: 1;
     margin: 0;
-    padding: 48px 0 49px;
+    padding: 48px 10px 49px;
     background-color: transparent;
     box-shadow: none;
   }

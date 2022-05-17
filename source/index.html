@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
 <head>
+  <link rel="stylesheet" type="text/css" href="less/blocks/section-text.less"/>
+  <link rel="stylesheet" type="text/css" href="less/blocks/button.less"/>
+  <link rel="stylesheet" type="text/css" href="less/blocks/intro.less"/>
+  <link rel="stylesheet" type="text/css" href="less/blocks/section-title.less"/>
   <link rel="stylesheet" type="text/css" href="less/blocks/main-nav.less"/>
   <link rel="stylesheet" type="text/css" href="less/blocks/main-header.less"/>
   <meta charset="utf-8">
@@ -48,25 +52,30 @@
 
   <section class="intro">
     <h2 class="intro__title section-title">Взгляните на жизнь иначе!</h2>
-    <a class="intro__button button" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
-    <ul class="intro__list site-list">
-      <li class="intro__item site-list__item">
-        <a href="#" class="intro__link">
-          <span class="visually-hidden">Скачать приложение для Apple</span>
-        </a>
-      </li>
-      <li class="intro__item site-list__item">
-        <a href="#" class="intro__link">
-          <span class="visually-hidden">Скачать приложение для Android</span>
-        </a>
-      </li>
-      <li class="intro__item site-list__item">
-        <a href="#" class="intro__link">
-          <span class="visually-hidden">Скачать приложение для Windows</span>
-        </a>
-      </li>
-    </ul>
-    <p class="intro__text section-text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+    <div class="intro__wrapper">
+      <a class="intro__button button" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
+      <ul class="intro__list site-list">
+        <li class="intro__item site-list__item">
+          <a href="#" class="intro__link">
+            <span class="visually-hidden">Скачать приложение для Apple</span>
+            <img style="display: block;" src="/img/sprite/apple-logo.svg" alt="#">
+          </a>
+        </li>
+        <li class="intro__item site-list__item">
+          <a href="#" class="intro__link">
+            <span class="visually-hidden">Скачать приложение для Android</span>
+            <img style="display: block;" src="/img/sprite/android-logo.svg" alt="#">
+          </a>
+        </li>
+        <li class="intro__item site-list__item">
+          <a href="#" class="intro__link">
+            <span class="visually-hidden">Скачать приложение для Windows</span>
+            <img style="display: block;" src="/img/sprite/microsoft-logo.svg" alt="#">
+          </a>
+        </li>
+      </ul>
+      <p class="intro__text section-text">Доступно для iPhone, iPad, Android, Windows&nbspPhone, OS&nbspX, Windows&nbsp8</p>
+    </div>
   </section>
 
   <section class="about">
