@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
 <head>
+  <link rel="stylesheet" type="text/css" href="less/blocks/reviews.less"/>
   <link rel="stylesheet" type="text/css" href="less/blocks/research.less"/>
   <link rel="stylesheet" type="text/css" href="less/blocks/about.less"/>
   <link rel="stylesheet" type="text/css" href="less/blocks/section-text.less"/>
@@ -123,36 +124,40 @@
     <h2 class="visually-hidden">Отзывы</h2>
     <ul class="reviews__list slider__list">
       <li class="reviews__item slider__item slider__item--active">
-        <h3 class="reviews__text-title section-text-title">Николай Петров</h3>
+        <h3 class="reviews__name section-text-title">Николай Петров</h3>
+        <p class="reviews__description">25 лет, водитель трамвая</p>
         <p class="reviews__text section-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
           привычные
           серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
       </li>
       <li class="reviews__item slider__item">
-        <h3 class="reviews__text-title section-text-title">Николай Петров</h3>
-        <p class="reviews__text section-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-          привычные
-          серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        <h3 class="reviews__name section-text-title">Короткий текст</h3>
+        <p class="reviews__description">25 лет, водитель трамвая</p>
+        <p class="reviews__text section-text">«Это приложение перевернуло мой мир»</p>
       </li>
       <li class="reviews__item slider__item">
-        <h3 class="reviews__text-title section-text-title">Николай Петров</h3>
+        <h3 class="reviews__name section-text-title">Длинный текст</h3>
+        <p class="reviews__description">25 лет, водитель трамвая</p>
         <p class="reviews__text section-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
           привычные
-          серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias architecto laborum, quidem quod tempore vel. Laboriosam minima pariatur provident quasi tempora? Asperiores culpa, dolorem illum maxime quas soluta vel.»</p>
       </li>
     </ul>
     <ul class="reviews__pagination slider__pagination">
       <li class="reviews__pagination-item slider__pagination-item slider__pagination-item--active">
-        <button class="slider__pagination-button" type="button">1</button>
+        <button class="slider__pagination-button" type="button"><span class="visually-hidden">1</span></button>
       </li>
       <li class="reviews__pagination-item slider__pagination-item">
-        <button class="slider__pagination-button" type="button">2</button>
+        <button class="slider__pagination-button" type="button"><span class="visually-hidden">2</span></button>
       </li>
       <li class="reviews__pagination-item slider__pagination-item">
-        <button class="slider__pagination-button" type="button">2</button>
+        <button class="slider__pagination-button" type="button"><span class="visually-hidden">3</span></button>
       </li>
     </ul>
+    <button class="slider__toggle slider__toggle--left" type="button"><span class="visually-hidden">Назад</span></button>
+    <button class="slider__toggle slider__toggle--right" type="button"><span class="visually-hidden">Вперед</span></button>
   </section>
+  <script src="/js/reviews-slider.js"></script>
 
   <section class="plans">
     <h2 class="visually-hidden">Тарифные планы</h2>
@@ -193,13 +198,13 @@
     </table>
     <ul class="plans__pagination slider__pagination">
       <li class="plans__pagination-item slider__pagination-item">
-        <button class="slider__pagination-button" type="button">1</button>
+        <button class="slider__pagination-button" type="button"><span class="visually-hidden">1</span></button>
       </li>
       <li class="plans__pagination-item slider__pagination-item slider__pagination-item--active">
-        <button class="slider__pagination-button" type="button">2</button>
+        <button class="slider__pagination-button" type="button"><span class="visually-hidden">2</span></button>
       </li>
       <li class="plans__pagination-item slider__pagination-item">
-        <button class="slider__pagination-button" type="button">2</button>
+        <button class="slider__pagination-button" type="button"><span class="visually-hidden">3</span></button>
       </li>
     </ul>
   </section>
