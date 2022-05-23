@@ -114,7 +114,8 @@
     <img class="research__img" style="display: block;" src="/img/sprite/24h.svg" alt="#">
     <div class="research__wrapper">
       <h2 class="research__title section-text-title">Эффект на&nbsp24&nbspчаса!</h2>
-      <p class="research__text section-text">Британские ученые провели исследования и&nbspдоказали, что положительный эффект
+      <p class="research__text section-text">Британские ученые провели исследования и&nbspдоказали, что положительный
+        эффект
         от&nbspиспользования приложения длится целые сутки!</p>
       <a class="research__link" href="#">Узнать больше об исследовании</a>
     </div>
@@ -140,7 +141,9 @@
         <p class="reviews__description">25 лет, водитель трамвая</p>
         <p class="reviews__text section-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
           привычные
-          серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias architecto laborum, quidem quod tempore vel. Laboriosam minima pariatur provident quasi tempora? Asperiores culpa, dolorem illum maxime quas soluta vel.»</p>
+          серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии! Lorem ipsum
+          dolor sit amet, consectetur adipisicing elit. Ad alias architecto laborum, quidem quod tempore vel. Laboriosam
+          minima pariatur provident quasi tempora? Asperiores culpa, dolorem illum maxime quas soluta vel.»</p>
       </li>
     </ul>
     <ul class="reviews__pagination slider__pagination">
@@ -154,48 +157,42 @@
         <button class="slider__pagination-button" type="button"><span class="visually-hidden">3</span></button>
       </li>
     </ul>
-    <button class="slider__toggle slider__toggle--left" type="button"><span class="visually-hidden">Назад</span></button>
-    <button class="slider__toggle slider__toggle--right" type="button"><span class="visually-hidden">Вперед</span></button>
+    <button class="slider__toggle slider__toggle--left" type="button"><span class="visually-hidden">Назад</span>
+    </button>
+    <button class="slider__toggle slider__toggle--right" type="button"><span class="visually-hidden">Вперед</span>
+    </button>
   </section>
   <script src="/js/reviews-slider.js"></script>
 
   <section class="plans">
     <h2 class="visually-hidden">Тарифные планы</h2>
-    <table class="plans__table">
-      <tr class="plans__table-header">
-        <th class="plans__table-header-item plans__table-header-item--empty"></th>
-        <th class="plans__table-header-item">
-          <h3>База</h3>
-          <p>1,99 USD</p>
-        </th>
-        <th class="plans__table-header-item">
-          <h3>СТАНДАРТ</h3>
-          <p>3,99 USD</p>
-        </th>
-        <th class="plans__table-header-item">
-          <h3>АНЛИМ</h3>
-          <p>9,99 USD</p>
-        </th>
-      </tr>
-      <tr class="plans__table-row">
-        <td class="plans__table-row-item">Розовый фильтр</td>
-        <td class="plans__table-row-item plans__table-row-item--no-text">Есть</td>
-        <td class="plans__table-row-item plans__table-row-item--no-text">Есть</td>
-        <td class="plans__table-row-item plans__table-row-item--no-text">Есть</td>
-      </tr>
-      <tr class="plans__table-row">
-        <td class="plans__table-row-item">Смайлики</td>
-        <td class="plans__table-row-item plans__table-row-item--no-text">Нет</td>
-        <td class="plans__table-row-item plans__table-row-item--no-text">Есть</td>
-        <td class="plans__table-row-item plans__table-row-item--no-text">Есть</td>
-      </tr>
-      <tr class="plans__table-row">
-        <td class="plans__table-row-item">Комментарии</td>
-        <td class="plans__table-row-item plans__table-row-item--no-text">Нет</td>
-        <td class="plans__table-row-item plans__table-row-item--no-text">Нет</td>
-        <td class="plans__table-row-item plans__table-row-item--no-text">Есть</td>
-      </tr>
-    </table>
+    <div class="plans-table">
+      <div class="plans-table__header-item plans-table__header-item--empty"></div>
+      <div class="plans-table__header-item" data-index="0">
+        <h3>База</h3>
+        <p>1,99 USD</p>
+      </div>
+      <div class="plans-table__header-item plans-table__header-item--hit plans-table__header-item--active" data-index="1">
+        <h3>СТАНДАРТ</h3>
+        <p>3,99 USD</p>
+      </div>
+      <div class="plans-table__header-item" data-index="2">
+        <h3>АНЛИМ</h3>
+        <p>9,99 USD</p>
+      </div>
+      <div class="plans-table__row-item plans-table__row-item--title">Розовый фильтр</div>
+      <div class="plans-table__row-item plans-table__row-item--yes" data-index="0"><span class="visually-hidden">Есть</span></div>
+      <div class="plans-table__row-item plans-table__row-item--yes plans-table__row-item--active" data-index="1"><span class="visually-hidden">Есть</span></div>
+      <div class="plans-table__row-item plans-table__row-item--yes" data-index="2"><span class="visually-hidden">Есть</span></div>
+      <div class="plans-table__row-item plans-table__row-item--title">Смайлики</div>
+      <div class="plans-table__row-item plans-table__row-item--no" data-index="0"><span class="visually-hidden">Нет</span></div>
+      <div class="plans-table__row-item plans-table__row-item--yes plans-table__row-item--active" data-index="1"><span class="visually-hidden">Есть</span></div>
+      <div class="plans-table__row-item plans-table__row-item--yes" data-index="2"><span class="visually-hidden">Есть</span></div>
+      <div class="plans-table__row-item plans-table__row-item--title">Комментарии</div>
+      <div class="plans-table__row-item plans-table__row-item--no" data-index="0"><span class="visually-hidden">Нет</span></div>
+      <div class="plans-table__row-item plans-table__row-item--no plans-table__row-item--active" data-index="1"><span class="visually-hidden">Нет</span></div>
+      <div class="plans-table__row-item plans-table__row-item--yes" data-index="2"><span class="visually-hidden">Есть</span></div>
+    </div>
     <ul class="plans__pagination slider__pagination">
       <li class="plans__pagination-item slider__pagination-item">
         <button class="slider__pagination-button" type="button"><span class="visually-hidden">1</span></button>
@@ -208,6 +205,7 @@
       </li>
     </ul>
   </section>
+  <script src="/js/plans-slider.js"></script>
 
   <section class="contacts">
     <h2 class="contacts__title section-title">Остались вопросы?<br>Свяжитесь с нами!</h2>
