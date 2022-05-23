@@ -53,19 +53,7 @@
 
 .main-nav__logo {
   display: block;
-  width: 74px;
-  height: 23px;
   color: @white;
-
-  @media (min-width: @tablet-width) {
-    width: 145px;
-    height: 40px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 147px;
-    height: 40px;
-  }
 
   &:hover {
     color: @pink;
@@ -73,6 +61,34 @@
 
   &:active {
     color: fade(@white, 30%);
+  }
+}
+
+.main-nav__logo-mobile {
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__logo-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav__logo-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
   }
 }
 
