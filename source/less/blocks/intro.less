@@ -117,8 +117,20 @@
 }
 
 .intro__button {
+  border-color: @white;
+
   @media (min-width: @desktop-width) {
     font-size: 21px;
+  }
+
+  &:hover {
+    color: @pink;
+    background-color: @white;
+  }
+
+  &:active {
+    color: fade(@pink, 30%);
+    background-color: @white;
   }
 }
 

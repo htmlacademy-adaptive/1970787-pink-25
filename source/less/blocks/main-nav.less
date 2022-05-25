@@ -103,6 +103,16 @@
   border: none;
   cursor: pointer;
 
+  &:hover .main-nav__toggle-burger--close {
+    background-color: transparent;
+  }
+
+  &:hover span,
+  &:hover span::before,
+  &:hover span::after {
+    background-color: @pink;
+  }
+
   @media (min-width: @tablet-width) {
     top: 43px;
   }
@@ -172,6 +182,10 @@
       box-shadow: none;
     }
   }
+
+  &:active {
+    background-color: fade(@pink, 30%);
+  }
 }
 
 .main-nav__menu {
@@ -224,5 +238,27 @@
   @media (min-width: @desktop-width) {
     font-weight: 400;
     text-transform: none;
+
+    &[href="#"] {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        bottom: -19px;
+        background-color: @white;
+      }
+    }
+  }
+
+  &:hover {
+    color: @pink;
+  }
+
+  &:active {
+    color: fade(@pink, 30%);
   }
 }
