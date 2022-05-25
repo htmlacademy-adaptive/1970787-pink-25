@@ -1,0 +1,165 @@
+.catalog-card {
+  margin: 0 20px 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+
+    &:nth-child(odd) {
+      margin-left: 0;
+    }
+
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin: 0;
+    }
+  }
+
+  &--card-of-day {
+    margin: 0 0 20px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 30px;
+      grid-column: span 2;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: -4px;
+      grid-column: span 3;
+    }
+  }
+}
+
+.catalog-card__image {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  &--card-of-day {
+    margin: 0;
+    width: 100%;
+
+    @media (min-width: @desktop-width) {
+      margin-left: -130px;
+      width: calc(100% + 260px);
+    }
+  }
+}
+
+.catalog-card__wrapper {
+  padding-top: 25px;
+  background-color: @grey-background;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  &--card-of-day {
+    margin: 0 20px;
+
+    @media (min-width: @tablet-width) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin: 0;
+    }
+  }
+}
+
+.catalog-card__title {
+  padding: 0 3px 0 17px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 30px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-left: 27px;
+  }
+}
+
+.catalog-card__time {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.catalog-card__text {
+  margin: 0;
+  padding: 0 17px;
+  font-size: 14px;
+  line-height: 24px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+    flex-grow: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 27px;
+  }
+
+  &--card-of-day {
+    @media (min-width: @tablet-width) {
+      margin-bottom: 30px;
+      grid-column: span 2;
+      order: 2;
+    }
+  }
+}
+
+.catalog-card__likes {
+  position: relative;
+  margin: 0;
+  padding: 25px 48px;
+  font-size: 12px;
+  line-height: 9px;
+  text-transform: uppercase;
+  color: @pink;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 27px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 100%;
+    top: 0;
+    left: 17px;
+    background-image: url("/img/heart.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    @media (min-width: @tablet-width) {
+      left: auto;
+      right: 30px;
+    }
+  }
+
+  &--card-of-day {
+    @media (min-width: @tablet-width) {
+      justify-self: right;
+      padding: 8px 59px;
+      order: 1;
+    }
+  }
+}
