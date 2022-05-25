@@ -1,0 +1,104 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+}
+
+.modal__content {
+  width: 100%;
+  margin-top: 15vh;
+  padding: 44px 0 52px;
+  background-color: @white;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  border-radius: 1px;
+
+  @media (min-width: @tablet-width) {
+    width: calc(100vw * 0.7);
+    margin: 7vh auto 0;
+    padding: 49px 0 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: calc(100vw * 0.65);
+    padding: 49px 0 0;
+  }
+
+  &--success {
+    padding-bottom: 0;
+  }
+}
+
+.modal--open {
+  display: block;
+}
+
+.modal__title {
+  text-align: center;
+  margin-bottom: 37px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 110px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.modal__text {
+  text-align: center;
+  padding: 0 20px;
+  margin-bottom: 50px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 70px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 215px;
+    margin-bottom: 68px;
+  }
+
+  &--success {
+    margin-bottom: 41px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 35px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 0 201px;
+      margin-bottom: 44px;
+    }
+  }
+}
+
+.modal__button-wrapper {
+  &--failure {
+    @media (min-width: @desktop-width) {
+      padding: 52px 0;
+      background-color: @grey-background;
+    }
+  }
+
+  &--success {
+    padding: 52px 0;
+    background-color: @grey-background;
+  }
+}
+
+.modal__button {
+  margin: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+  }
+
+  &--success {
+    @media (min-width: @desktop-width) {
+      width: 456px;
+    }
+  }
+}

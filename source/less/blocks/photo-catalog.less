@@ -1,0 +1,101 @@
+.photo-catalog__title-wrapper {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: calc(100% + 66px);
+    top: -66px;
+    left: 0;
+    background-color: @darkblue;
+    background-image: url("/img/title-back-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/title-back-mobile@2x.jpg");
+    }
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+
+    @media (min-width: @tablet-width) {
+      top: -110px;
+      height: calc(100% + 110px);
+      background-image: url("/img/title-back-tablet.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("/img/title-back-tablet@2x.jpg");
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      background-image: url("/img/title-back-desktop.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("/img/title-back-desktop@2x.jpg");
+      }
+    }
+  }
+}
+
+.photo-catalog__title {
+  padding: 29px 20px 78px;
+  color: @white;
+  text-align: center;
+  line-height: 33px;
+
+  @media (min-width: @tablet-width) {
+    padding: 66px 20px 128px;
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 59px 280px 89px;
+  }
+}
+
+.photo-catalog__text {
+  padding: 44px 20px 50px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 92px 85px 76px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 92px 222px 88px;
+  }
+
+  &--bottom {
+    padding: 40px 20px 42px;
+
+    @media (min-width: @tablet-width) {
+      padding: 65px 20px 69px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 59px 130px 66px;
+    }
+  }
+}
+
+.photo-catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: stretch;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 130px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 54px 20px;
+  }
+}

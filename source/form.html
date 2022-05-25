@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
 <head>
-  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="less/blocks/contest.less"/>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML Academy: Пинк</title>
+  <title>Конкурс</title>
   <link rel="preload" href="/css/style.min.css" type="style" crossorigin="anonymous">
   <link rel="preload" href="/js/mobile-menu.js" type="script" crossorigin="anonymous">
   <link rel="preload" href="/fonts/opensans.woff2" type="font/woff2" crossorigin="anonymous">
@@ -81,7 +82,7 @@
 <header class="main-header">
   <nav class="main-nav">
     <div class="main-nav__wrapper">
-      <a class="main-nav__logo" href="#">
+      <a class="main-nav__logo" href="index.html">
         <span class="visually-hidden">Логотип приложения "Пинк"</span>
         <svg class="main-nav__logo-mobile" width="74" height="23" xmlns="http://www.w3.org/2000/svg">
           <use href="#main-logo-mobile"></use>
@@ -100,13 +101,13 @@
     </div>
     <ul class="main-nav__menu site-list">
       <li class="main-nav__item site-list__item">
-        <a href="#" class="main-nav__link">Главная</a>
+        <a href="index.html" class="main-nav__link">Главная</a>
       </li>
       <li class="main-nav__item site-list__item">
         <a href="catalog.html" class="main-nav__link">Фотографии</a>
       </li>
       <li class="main-nav__item site-list__item">
-        <a href="form.html" class="main-nav__link">Конкурс</a>
+        <a href="#" class="main-nav__link">Конкурс</a>
       </li>
       <li class="main-nav__item site-list__item">
         <a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__link">HTML Academy</a>
@@ -117,206 +118,159 @@
 <script src="/js/mobile-menu.js"></script>
 
 <main class="main-wrapper">
-  <h1 class="visually-hidden">Сайт приложения "Пинк"</h1>
+  <h1 class="visually-hidden">Конкурсы</h1>
 
-  <section class="intro">
-    <h2 class="intro__title section-title">Взгляните на жизнь иначе!</h2>
-    <div class="intro__wrapper">
-      <a class="intro__button button" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
-      <ul class="intro__list site-list">
-        <li class="intro__item site-list__item">
-          <a class="intro__link" href="#">
-            <span class="visually-hidden">Скачать приложение для Apple</span>
-            <svg width="68" height="56">
-              <use xlink:href="/img/sprite.svg#apple-logo"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="intro__item site-list__item">
-          <a class="intro__link" href="#">
-            <span class="visually-hidden">Скачать приложение для Android</span>
-            <svg width="68" height="56">
-              <use xlink:href="/img/sprite.svg#android-logo"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="intro__item site-list__item">
-          <a class="intro__link" href="#">
-            <span class="visually-hidden">Скачать приложение для Windows</span>
-            <svg width="68" height="56">
-              <use xlink:href="/img/sprite.svg#microsoft-logo"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <p class="intro__text section-text">Доступно для iPhone, iPad, Android, Windows&nbspPhone, OS&nbspX,
-        Windows&nbsp8</p>
+  <section class="contest">
+    <div class="contest__title-wrapper">
+      <h2 class="contest__title section-title">Конкурс на самое безбашенное путешествие с Пинк</h2>
     </div>
+    <p class="contest__text section-text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на
+      вашу бонусную карту! <span class="contest__text section-text contest__text--no-mobile">Пожалуйста, заполните форму ниже:</span>
+    </p>
+
+    <form class="contest__form main-form" action="https://echo.htmlacademy.ru" method="post">
+
+      <fieldset class="main-form__fieldset main-form__fieldset--name">
+        <legend class="visually-hidden">ФИО</legend>
+        <ul class="main-form__list">
+          <li class="main-form__item">
+            <label class="main-form__label">
+              <span class="main-form__label-text">ФАМИЛИЯ:</span>
+              <input class="main-form__input" type="text" name="surname" placeholder="Укажите фамилию *" required>
+            </label>
+          </li>
+          <li class="main-form__item">
+            <label class="main-form__label">
+              <span class="main-form__label-text">ИМЯ:</span>
+              <input class="main-form__input" type="text" name="name" placeholder="Введите ваше имя *" required>
+            </label>
+          </li>
+          <li class="main-form__item">
+            <label class="main-form__label">
+              <span class="main-form__label-text">ОТЧЕСТВО:</span>
+              <input class="main-form__input" type="text" name="middlename" placeholder="Ну и отчество тоже">
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="main-form__fieldset main-form__fieldset--with-bg main-form__fieldset--achievements">
+        <legend class="main-form__legend">Ваши безбашенные достижения в путешествии</legend>
+        <ul class="main-form__list">
+          <li class="main-form__item main-form__item--control-checkbox">
+            <label class="main-form__control">
+              <input class="visually-hidden" type="checkbox" name="sharkfy" checked>
+              <span class="main-form__control-mark main-form__control-mark--checkbox"></span>
+              <span class="main-form__control-label">Сделал селфи с акулой</span>
+            </label>
+          </li>
+          <li class="main-form__item main-form__item--control-checkbox">
+            <label class="main-form__control">
+              <input class="visually-hidden" type="checkbox" name="burning-man" checked>
+              <span class="main-form__control-mark main-form__control-mark--checkbox"></span>
+              <span class="main-form__control-label">Обгорел на пляже</span>
+            </label>
+          </li>
+          <li class="main-form__item main-form__item--control-checkbox">
+            <label class="main-form__control">
+              <input class="visually-hidden" type="checkbox" name="chuck-chuck">
+              <span class="main-form__control-mark main-form__control-mark--checkbox"></span>
+              <span class="main-form__control-label">Видел Чака Норриса</span>
+            </label>
+          </li>
+          <li class="main-form__item main-form__item--control-checkbox">
+            <label class="main-form__control">
+              <input class="visually-hidden" type="checkbox" name="souvenirs-reseller">
+              <span class="main-form__control-mark main-form__control-mark--checkbox"></span>
+              <span class="main-form__control-label">Накупил сувениров</span>
+            </label>
+          </li>
+          <li class="main-form__item main-form__item--control-checkbox">
+            <label class="main-form__control">
+              <input class="visually-hidden" type="checkbox" name="tower-defender" checked>
+              <span class="main-form__control-mark main-form__control-mark--checkbox"></span>
+              <span class="main-form__control-label">Удержал башню</span>
+            </label>
+          </li>
+          <li class="main-form__item main-form__item--control-checkbox">
+            <label class="main-form__control">
+              <input class="visually-hidden" type="checkbox" name="tagil">
+              <span class="main-form__control-mark main-form__control-mark--checkbox"></span>
+              <span class="main-form__control-label">Разгромил отель</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="main-form__fieldset main-form__fieldset--contacts">
+        <legend class="main-form__legend main-form__legend--not-mobile">контактная информация</legend>
+        <ul class="main-form__list">
+          <li class="main-form__item main-form__item--contacts">
+            <label class="main-form__label main-form__label--contacts main-form__label--tel">
+              <span class="main-form__label-text">НОМЕР ТЕЛЕФОНА</span>
+              <input class="main-form__input" type="tel" name="tel" placeholder="Номер, пожалуйста">
+            </label>
+          </li>
+          <li class="main-form__item main-form__item--contacts">
+            <label class="main-form__label main-form__label--contacts main-form__label--email">
+              <span class="main-form__label-text">АДРЕС ПОЧТЫ</span>
+              <input class="main-form__input" type="email" name="email" placeholder="Введите почту *" required>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="main-form__fieldset main-form__fieldset--with-bg main-form__fieldset--app">
+        <legend class="main-form__legend">С каким приложением путешествовали?</legend>
+        <ul class="main-form__list">
+          <li class="main-form__item main-form__item--control-radio">
+            <label class="main-form__control">
+              <input class="visually-hidden" type="radio" name="app" value="ios" checked>
+              <span class="main-form__control-mark main-form__control-mark--radio"></span>
+              <span class="main-form__control-label">Pink для iOS</span>
+            </label>
+          </li>
+          <li class="main-form__item main-form__item--control-radio">
+            <label class="main-form__control">
+              <input class="visually-hidden" type="radio" name="app" value="android">
+              <span class="main-form__control-mark main-form__control-mark--radio"></span>
+              <span class="main-form__control-label">Pink на Android</span>
+            </label>
+          </li>
+          <li class="main-form__item main-form__item--control-radio">
+            <label class="main-form__control">
+              <input class="visually-hidden" type="radio" name="app" value="windows">
+              <span class="main-form__control-mark main-form__control-mark--radio"></span>
+              <span class="main-form__control-label">Windows Phone</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="main-form__fieldset main-form__fieldset--emotions">
+        <legend class="main-form__legend main-form__legend--textarea">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
+        <label class="main-form__control">
+          <span class="visually-hidden">Ваши эмоции</span>
+          <textarea class="main-form__input main-form__input--textarea" name="emotions"
+                    cols="23" rows="3" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </label>
+      </fieldset>
+      <div class="main-form__wrapper">
+        <button class="main-form__button" type="submit">Отправить форму</button>
+        <p class="main-form__text-wrapper">
+          <span class="main-form__text main-form__text--color">*</span>
+          <span class="main-form__text">— обязательные </span>
+          <span class="main-form__text main-form__text--desktop">для заполнения </span>
+          <span class="main-form__text">поля</span>
+        </p>
+      </div>
+    </form>
   </section>
 
-  <section class="about">
-    <h2 class="about__title section-title">
-      <span>Устали от серости мегаполиса?</span>
-      <span>Нам есть, что вам предложить!</span>
-    </h2>
-    <div class="about__wrapper">
-      <ul class="about__list site-list">
-        <li class="about__item about__item--1">
-          <h3 class="about__text-title section-text-title">Поднимает настроение</h3>
-          <p class="about__text section-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
-            несколько
-            кликов!</p>
-        </li>
-        <li class="about__item about__item--2">
-          <h3 class="about__text-title section-text-title">Меняет мир вокруг</h3>
-          <p class="about__text section-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
-            усилить
-            эффект</p>
-        </li>
-        <li class="about__item about__item--3">
-          <h3 class="about__text-title section-text-title">Заводит новых&nbspдрузей</h3>
-          <p class="about__text section-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
-            новых</p>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="research">
-    <svg class="research__img" width="238" height="276">
-      <use xlink:href="/img/sprite.svg#24h"></use>
-    </svg>
-    <div class="research__wrapper">
-      <h2 class="research__title section-text-title">Эффект на&nbsp24&nbspчаса!</h2>
-      <p class="research__text section-text">Британские ученые провели исследования и&nbspдоказали, что положительный
-        эффект
-        от&nbspиспользования приложения длится целые сутки!</p>
-      <a class="research__link" href="#">Узнать больше об исследовании</a>
-    </div>
-  </section>
-
-  <section class="reviews slider">
-    <h2 class="visually-hidden">Отзывы</h2>
-    <ul class="reviews__list slider__list">
-      <li class="reviews__item slider__item slider__item--active">
-        <h3 class="reviews__name section-text-title">Николай Петров</h3>
-        <p class="reviews__description">25 лет, водитель трамвая</p>
-        <p class="reviews__text section-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-          привычные
-          серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-      </li>
-      <li class="reviews__item slider__item">
-        <h3 class="reviews__name section-text-title">Короткий текст</h3>
-        <p class="reviews__description">25 лет, водитель трамвая</p>
-        <p class="reviews__text section-text">«Это приложение перевернуло мой мир»</p>
-      </li>
-      <li class="reviews__item slider__item">
-        <h3 class="reviews__name section-text-title">Длинный текст</h3>
-        <p class="reviews__description">25 лет, водитель трамвая</p>
-        <p class="reviews__text section-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-          привычные
-          серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии! Lorem ipsum
-          dolor sit amet, consectetur adipisicing elit. Ad alias architecto laborum, quidem quod tempore vel. Laboriosam
-          minima pariatur provident quasi tempora? Asperiores culpa, dolorem illum maxime quas soluta vel.»</p>
-      </li>
-    </ul>
-    <ul class="reviews__pagination slider__pagination">
-      <li class="reviews__pagination-item slider__pagination-item slider__pagination-item--active">
-        <button class="slider__pagination-button" type="button"><span class="visually-hidden">1</span></button>
-      </li>
-      <li class="reviews__pagination-item slider__pagination-item">
-        <button class="slider__pagination-button" type="button"><span class="visually-hidden">2</span></button>
-      </li>
-      <li class="reviews__pagination-item slider__pagination-item">
-        <button class="slider__pagination-button" type="button"><span class="visually-hidden">3</span></button>
-      </li>
-    </ul>
-    <button class="slider__toggle slider__toggle--left" type="button"><span class="visually-hidden">Назад</span>
-    </button>
-    <button class="slider__toggle slider__toggle--right" type="button"><span class="visually-hidden">Вперед</span>
-    </button>
-  </section>
-  <script src="/js/reviews-slider.js"></script>
-
-  <section class="plans">
-    <h2 class="visually-hidden">Тарифные планы</h2>
-    <div class="plans-table">
-      <div class="plans-table__header-item plans-table__header-item--empty"></div>
-      <div class="plans-table__header-item" data-index="0">
-        <h3>База</h3>
-        <p>1,99 USD</p>
-      </div>
-      <div class="plans-table__header-item plans-table__header-item--hit plans-table__header-item--active"
-           data-index="1">
-        <h3>СТАНДАРТ</h3>
-        <p>3,99 USD</p>
-      </div>
-      <div class="plans-table__header-item" data-index="2">
-        <h3>АНЛИМ</h3>
-        <p>9,99 USD</p>
-      </div>
-      <div class="plans-table__row-item plans-table__row-item--title">Розовый фильтр</div>
-      <div class="plans-table__row-item plans-table__row-item--yes" data-index="0"><span
-        class="visually-hidden">Есть</span></div>
-      <div class="plans-table__row-item plans-table__row-item--yes plans-table__row-item--active" data-index="1"><span
-        class="visually-hidden">Есть</span></div>
-      <div class="plans-table__row-item plans-table__row-item--yes" data-index="2"><span
-        class="visually-hidden">Есть</span></div>
-      <div class="plans-table__row-item plans-table__row-item--title">Смайлики</div>
-      <div class="plans-table__row-item plans-table__row-item--no" data-index="0"><span
-        class="visually-hidden">Нет</span></div>
-      <div class="plans-table__row-item plans-table__row-item--yes plans-table__row-item--active" data-index="1"><span
-        class="visually-hidden">Есть</span></div>
-      <div class="plans-table__row-item plans-table__row-item--yes" data-index="2"><span
-        class="visually-hidden">Есть</span></div>
-      <div class="plans-table__row-item plans-table__row-item--title">Комментарии</div>
-      <div class="plans-table__row-item plans-table__row-item--no" data-index="0"><span
-        class="visually-hidden">Нет</span></div>
-      <div class="plans-table__row-item plans-table__row-item--no plans-table__row-item--active" data-index="1"><span
-        class="visually-hidden">Нет</span></div>
-      <div class="plans-table__row-item plans-table__row-item--yes" data-index="2"><span
-        class="visually-hidden">Есть</span></div>
-    </div>
-    <ul class="plans__pagination slider__pagination">
-      <li class="plans__pagination-item slider__pagination-item">
-        <button class="slider__pagination-button" type="button"><span class="visually-hidden">1</span></button>
-      </li>
-      <li class="plans__pagination-item slider__pagination-item slider__pagination-item--active">
-        <button class="slider__pagination-button" type="button"><span class="visually-hidden">2</span></button>
-      </li>
-      <li class="plans__pagination-item slider__pagination-item">
-        <button class="slider__pagination-button" type="button"><span class="visually-hidden">3</span></button>
-      </li>
-    </ul>
-  </section>
-  <script src="/js/plans-slider.js"></script>
-
-  <section class="contacts">
-    <div class="contacts__main-wrapper">
-      <h2 class="contacts__title section-title">Остались вопросы?<br>Свяжитесь с нами!</h2>
-      <div class="contacts__wrapper contacts__wrapper--tel">
-        <p class="contacts__text-title section-text-title">Звоните:</p>
-        <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
-      </div>
-      <div class="contacts__wrapper contacts__wrapper--email">
-        <p class="contacts__text-title section-text-title">Пишите:</p>
-        <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-      </div>
-      <div class="contacts__wrapper contacts__wrapper--address">
-        <p class="contacts__text-title section-text-title">Приезжайте в гости:</p>
-        <p class="contacts__link">ул. Большая Конюшенная, 19/8</p>
-      </div>
-    </div>
-    <div class="contacts__map-wrapper">
-      <iframe
-        src="https://yandex.ru/map-widget/v1/?um=constructor%3A7fc8d98749c804ec5a927dd85c8225ba02e4181835a17b4a86d38a7bd14f102b&amp;source=constructor"
-        width="100%" height="100%"></iframe>
-    </div>
-  </section>
 </main>
 
 <footer class="main-footer">
-  <a href="#" class="main-footer__logo">
+  <a href="index.html" class="main-footer__logo">
     <span class="visually-hidden">Логотип приложения "Пинк"</span>
     <svg class="main-footer__logo-img main-footer__logo-img--mobile" width="145" height="40" fill="none"
          xmlns="http://www.w3.org/2000/svg">
@@ -354,6 +308,30 @@
     </svg>
   </a>
 </footer>
+
+<div class="modal modal--failure"> <!--Для открытия используем модификатор modal--open -->
+  <section class="modal__content modal__content--failure">
+    <h2 class="modal__title modal__title--failure section-text-title">Что-то пошло не так!</h2>
+    <p class="modal__text modal__text--failure section-text">Проверьте поля, выделенные красным,
+      скорее всего вы забыли их заполнить</p>
+    <div class="modal__button-wrapper modal__button-wrapper--failure">
+      <button class="modal__button modal__button--failure main-form__button" type="button">ОК</button>
+    </div>
+  </section>
+</div>
+
+<div class="modal modal--success"> <!--Для открытия используем модификатор modal--open -->
+  <section class="modal__content modal__content--success">
+    <h2 class="modal__title modal__title--success section-text-title">Ваша заявка отправлена</h2>
+    <p class="modal__text modal__text--success section-text">Спасибо за ваше участие, ваша заявка
+      уже поступила к нам. В ближайшее
+      время мы рассмотрим ее и
+      оповестим&nbspвас.</p>
+    <div class="modal__button-wrapper--success">
+      <button class="modal__button modal__button--success main-form__button" type="button">ЗАКРЫТЬ ОКНО</button>
+    </div>
+  </section>
+</div>
 
 </body>
 </html>

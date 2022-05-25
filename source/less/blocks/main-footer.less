@@ -1,0 +1,131 @@
+.main-footer {
+  padding: 40px 20px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 70px 120px;
+  }
+}
+
+.main-footer__logo {
+  display: block;
+  margin-bottom: 38px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+}
+
+.main-footer__logo-img {
+  display: block;
+  margin: 0 auto;
+  color: @darkblue;
+
+  &--mobile {
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    display: none;
+
+    @media (min-width: @desktop-width) {
+      display: block;
+    }
+  }
+
+  &:hover {
+    color: @pink;
+  }
+
+  &:active {
+    color: @darkblue;
+    opacity: 0.3;
+  }
+}
+
+.main-footer__social {
+  margin: 0 0 38px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 20px;
+  }
+}
+
+.social__item {
+  width: 54px;
+  height: 54px;
+  box-sizing: border-box;
+  border: 3px solid fade(@darkblue, 10%);
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &:not(:last-child) {
+    margin-right: 9px;
+  }
+
+  & a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &--telegram {
+    background-image: url("/img/telegram.svg");
+  }
+
+  &--youtube {
+    background-image: url("/img/youtube.svg");
+  }
+
+  &--vk {
+    background-image: url("/img/vk.svg");
+  }
+
+  &:hover {
+    border: 3px solid @darkblue;
+  }
+
+  &:active {
+    border: 3px solid @darkblue;
+    opacity: 0.1;
+  }
+}
+
+.main-footer__academy {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 34px;
+  text-align: center;
+  text-decoration: none;
+  color: @darkblue;
+
+  & svg {
+    display: block;
+    margin-left: 15px;
+  }
+
+  &:hover svg path {
+    fill: @darkblue;
+  }
+
+  &:active svg path {
+    fill: @darkblue;
+    opacity: 0.3;
+  }
+}
