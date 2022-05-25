@@ -409,6 +409,22 @@
     width: 296px;
     margin: 0;
   }
+
+  &:hover {
+    background-color: @green-hover;
+    border-color: @green-hover;
+  }
+
+  &:active {
+    color: fade(@white, 30%);
+    background-color: @green-hover;
+    border-color: @green-hover;
+  }
+
+  &:disabled {
+    background-color: @grey;
+    border-color: @grey;
+  }
 }
 
 .main-form__text-wrapper {
