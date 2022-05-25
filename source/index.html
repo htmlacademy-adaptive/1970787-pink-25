@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Пинк</title>
-  <link rel="preload" href="/css/style.min.css" type="style" crossorigin="anonymous">
-  <link rel="preload" href="/js/mobile-menu.js" type="script" crossorigin="anonymous">
-  <link rel="preload" href="/fonts/opensans.woff2" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="/fonts/opensansbold.woff2" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="/fonts/opensanslight.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/css/style.min.css" as="style" crossorigin="anonymous">
+  <link rel="preload" href="/js/mobile-menu.js" as="script" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/style.min.css">
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml"> <!--svg-->
@@ -149,8 +149,8 @@
           </a>
         </li>
       </ul>
-      <p class="intro__text section-text">Доступно для iPhone, iPad, Android, Windows&nbspPhone, OS&nbspX,
-        Windows&nbsp8</p>
+      <p class="intro__text section-text">Доступно для iPhone, iPad, Android, Windows&nbsp;Phone, OS&nbsp;X,
+        Windows&nbsp;8</p>
     </div>
   </section>
 
@@ -174,7 +174,7 @@
             эффект</p>
         </li>
         <li class="about__item about__item--3">
-          <h3 class="about__text-title section-text-title">Заводит новых&nbspдрузей</h3>
+          <h3 class="about__text-title section-text-title">Заводит новых&nbsp;друзей</h3>
           <p class="about__text section-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
             новых</p>
         </li>
@@ -187,10 +187,10 @@
       <use xlink:href="/img/sprite.svg#24h"></use>
     </svg>
     <div class="research__wrapper">
-      <h2 class="research__title section-text-title">Эффект на&nbsp24&nbspчаса!</h2>
-      <p class="research__text section-text">Британские ученые провели исследования и&nbspдоказали, что положительный
+      <h2 class="research__title section-text-title">Эффект на&nbsp;24&nbsp;часа!</h2>
+      <p class="research__text section-text">Британские ученые провели исследования и&nbsp;доказали, что положительный
         эффект
-        от&nbspиспользования приложения длится целые сутки!</p>
+        от&nbsp;использования приложения длится целые сутки!</p>
       <a class="research__link" href="#">Узнать больше об исследовании</a>
     </div>
   </section>
@@ -238,7 +238,7 @@
   </section>
   <script src="/js/reviews-slider.js"></script>
 
-  <section class="plans">
+  <section class="plans slider">
     <h2 class="visually-hidden">Тарифные планы</h2>
     <div class="plans-table">
       <div class="plans-table__header-item plans-table__header-item--empty"></div>
@@ -246,8 +246,7 @@
         <h3>База</h3>
         <p>1,99 USD</p>
       </div>
-      <div class="plans-table__header-item plans-table__header-item--hit plans-table__header-item--active"
-           data-index="1">
+      <div class="plans-table__header-item plans-table__header-item--hit plans-table__header-item--active" data-index="1">
         <h3>СТАНДАРТ</h3>
         <p>3,99 USD</p>
       </div>
@@ -309,8 +308,8 @@
     </div>
     <div class="contacts__map-wrapper">
       <iframe
-        src="https://yandex.ru/map-widget/v1/?um=constructor%3A7fc8d98749c804ec5a927dd85c8225ba02e4181835a17b4a86d38a7bd14f102b&amp;source=constructor"
-        width="100%" height="100%"></iframe>
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3A7fc8d98749c804ec5a927dd85c8225ba02e4181835a17b4a86d38a7bd14f102b&amp;source=constructor">
+      </iframe>
     </div>
   </section>
 </main>
@@ -318,27 +317,25 @@
 <footer class="main-footer">
   <a href="#" class="main-footer__logo">
     <span class="visually-hidden">Логотип приложения "Пинк"</span>
-    <svg class="main-footer__logo-img main-footer__logo-img--mobile" width="145" height="40" fill="none"
-         xmlns="http://www.w3.org/2000/svg">
+    <svg class="main-footer__logo-img main-footer__logo-img--mobile" width="145" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
       <use href="#footer-logo-mobile"></use>
     </svg>
-    <svg class="main-footer__logo-img main-footer__logo-img--desktop" width="147" height="40" fill="none"
-         xmlns="http://www.w3.org/2000/svg">
+    <svg class="main-footer__logo-img main-footer__logo-img--desktop" width="147" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
       <use href="#footer-logo-desktop"></use>
     </svg>
   </a>
   <ul class="main-footer__social">
-    <li class="social__item social__item--vk">
+    <li class="main-footer__social-item main-footer__social-item--vk">
       <a href="https://vk.ru">
         <span class="visually-hidden">Вконтакте</span>
       </a>
     </li>
-    <li class="social__item social__item--telegram">
+    <li class="main-footer__social-item main-footer__social-item--telegram">
       <a href="https://telegram.org">
         <span class="visually-hidden">Telegram</span>
       </a>
     </li>
-    <li class="social__item social__item--youtube">
+    <li class="main-footer__social-item main-footer__social-item--youtube">
       <a href="https://www.youtube.com">
         <span class="visually-hidden">YouTube</span>
       </a>

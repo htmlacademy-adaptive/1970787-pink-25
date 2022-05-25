@@ -122,6 +122,16 @@
 
   & iframe {
     border: none;
+    width: 100%;
+    height: 200px;
+
+    @media (min-width: @tablet-width) {
+      height: 374px;
+    }
+
+    @media (min-width: @desktop-width) {
+      height: 502px;
+    }
   }
 
   &::before {
