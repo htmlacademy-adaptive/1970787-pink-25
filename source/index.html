@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Пинк</title>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.min.css">
 </head>
 <body>
 
@@ -118,19 +118,25 @@
         <li class="intro__item site-list__item">
           <a class="intro__link" href="#">
             <span class="visually-hidden">Скачать приложение для Apple</span>
-            <img style="display: block;" src="/img/sprite/apple-logo.svg" alt="#">
+            <svg width="68" height="56">
+              <use xlink:href="/img/sprite.svg#apple-logo"></use>
+            </svg>
           </a>
         </li>
         <li class="intro__item site-list__item">
           <a class="intro__link" href="#">
             <span class="visually-hidden">Скачать приложение для Android</span>
-            <img style="display: block;" src="/img/sprite/android-logo.svg" alt="#">
+            <svg width="68" height="56">
+              <use xlink:href="/img/sprite.svg#android-logo"></use>
+            </svg>
           </a>
         </li>
         <li class="intro__item site-list__item">
           <a class="intro__link" href="#">
             <span class="visually-hidden">Скачать приложение для Windows</span>
-            <img style="display: block;" src="/img/sprite/microsoft-logo.svg" alt="#">
+            <svg width="68" height="56">
+              <use xlink:href="/img/sprite.svg#microsoft-logo"></use>
+            </svg>
           </a>
         </li>
       </ul>
@@ -168,7 +174,9 @@
   </section>
 
   <section class="research">
-    <img class="research__img" style="display: block;" src="/img/sprite/24h.svg" alt="#">
+    <svg class="research__img" width="238" height="276">
+      <use xlink:href="/img/sprite.svg#24h"></use>
+    </svg>
     <div class="research__wrapper">
       <h2 class="research__title section-text-title">Эффект на&nbsp24&nbspчаса!</h2>
       <p class="research__text section-text">Британские ученые провели исследования и&nbspдоказали, что положительный

@@ -71,7 +71,7 @@ const webpConvert = () => {
 // SVG
 
 const optimizeSvg = () => {
-  return gulp.src('source/img/**/*.svg')
+  return gulp.src('source/img/*.svg')
     .pipe(svgo())
     .pipe(gulp.dest('build/img'))
 }

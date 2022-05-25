@@ -1,6 +1,6 @@
 .img-yes-no (@name) {
   &--@{name}::before {
-    @media (max-width: calc(@tablet-width - 1px)) {
+    @media (max-width: @tablet-width - 1px) {
       display: none;
     }
     content: "";
@@ -83,7 +83,7 @@
   }
 
   &--hit::before {
-    @media (max-width: calc(@tablet-width - 1px)) {
+    @media (max-width: @tablet-width - 1px) {
       display: none;
     }
     content: "";
@@ -97,7 +97,7 @@
   }
 
   &--hit::after {
-    @media (max-width: calc(@tablet-width - 1px)) {
+    @media (max-width: @tablet-width - 1px) {
       display: none;
     }
     content: "ХИТ";
@@ -113,7 +113,7 @@
   }
 
   & h3 {
-    @media (max-width: calc(@tablet-width - 1px)) {
+    @media (max-width: @tablet-width - 1px) {
       display: none;
     }
     margin: 0;
@@ -125,7 +125,7 @@
   }
 
   & p {
-    @media (max-width: calc(@tablet-width - 1px)) {
+    @media (max-width: @tablet-width - 1px) {
       display: none;
     }
     margin: 0;
@@ -138,31 +138,31 @@
   }
 
   &--active {
-    @media (max-width: calc(@tablet-width - 1px)) {
+    @media (max-width: @tablet-width - 1px) {
       order: -1;
       grid-column: 2 / 4;
     }
 
     & h3 {
-      @media (max-width: calc(@tablet-width - 1px)) {
+      @media (max-width: @tablet-width - 1px) {
         display: block;
       }
     }
 
     & p {
-      @media (max-width: calc(@tablet-width - 1px)) {
+      @media (max-width: @tablet-width - 1px) {
         display: block;
       }
     }
 
     &::after {
-      @media (max-width: calc(@tablet-width - 1px)) {
+      @media (max-width: @tablet-width - 1px) {
         display: block;
       }
     }
 
     &::before {
-      @media (max-width: calc(@tablet-width - 1px)) {
+      @media (max-width: @tablet-width - 1px) {
         display: block;
       }
     }
@@ -179,7 +179,7 @@
   &--title {
     padding: 18px 15px 17px;
 
-    @media (max-width: calc(@tablet-width - 1px)) {
+    @media (max-width: @tablet-width - 1px) {
       order: -1;
       grid-column: 2 / 3;
       border-right: none;
@@ -190,14 +190,14 @@
   .img-yes-no (no);
 
   &--active {
-    @media (max-width: calc(@tablet-width - 1px)) {
+    @media (max-width: @tablet-width - 1px) {
       order: -1;
       grid-column: 3 / 4;
       border-left: none;
     }
 
     &::before {
-      @media (max-width: calc(@tablet-width - 1px)) {
+      @media (max-width: @tablet-width - 1px) {
         display: block;
       }
     }
