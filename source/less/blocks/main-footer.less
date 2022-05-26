@@ -9,7 +9,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 70px 120px;
+    padding: 68px 130px;
   }
 }
 
@@ -19,6 +19,7 @@
 
   @media (min-width: @tablet-width) {
     margin: 0;
+    padding-bottom: 13px;
   }
 }
 
@@ -60,7 +61,11 @@
   flex-wrap: wrap;
 
   @media (min-width: @tablet-width) {
-    margin: 0 20px;
+    margin: 0 17px 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 0 4px;
   }
 }
 
@@ -127,5 +132,13 @@
   &:active svg path {
     fill: @darkblue;
     opacity: 0.3;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+
+    & svg {
+      margin-left: 13px;
+    }
   }
 }
