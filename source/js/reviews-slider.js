@@ -63,8 +63,6 @@ for (let i = 0; i < sliderPaginations.length; i++) {
   });
 }
 
-
 window.addEventListener('resize', function () {
   resizeText();
 });
-
